@@ -2,7 +2,7 @@ package fr.ippon.mill.cereals;
 
 public class cereals {
   private int id;
-  private String type;
+  private CerealType type;
 
   public int getId() {
     return id;
@@ -12,11 +12,18 @@ public class cereals {
     this.id = id;
   }
 
-  public String getType() {
+  public CerealType getType() {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(CerealType type) {
     this.type = type;
   }
+
+  public enum CerealType {
+    Ble,
+    Avoine,
+      Orge,
+    Houblon
+    }
 }
